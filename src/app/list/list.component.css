@@ -1,0 +1,33 @@
+.task-list-container{
+    background-color: rgb(232, 237, 243);
+}
+ul{
+    display: flex;
+    flex-flow: column;
+}
+li{
+    display:flex;
+    min-width:100%;
+    /*background-color: antiquewhite;*/
+    padding: 0.75em 3em 0.75em 3em;
+    border-radius: 0.4em;
+    filter:drop-shadow(0px 1px 8px rgb(0, 0, 0))
+}
+.closeButton{
+    cursor: pointer;
+    align-self: flex-end;
+}
+#textToEdit{
+    display:none;
+    
+}
+#isDone{
+    display: none;
+}
+#saveEdit{
+    display:none;
+}
+#saveEdit{
+    background-color: rgb(227, 88, 185);
+    border-color:#5C085C;
+}

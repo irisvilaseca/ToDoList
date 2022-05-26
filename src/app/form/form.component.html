@@ -1,0 +1,11 @@
+<div class="justified">
+  <div class="form-group">
+      <h1>ToDO List</h1>
+      <textarea class="form-control" id="exampleFormControlTextarea2" rows="1" placeholder="Add your task here"> </textarea>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg" id="submit" (click)="[submit(), list.show()]">Añadir tarea</button>
+  </div>
+  <div class="justified">
+    <app-list #list></app-list>
+  </div>
+  

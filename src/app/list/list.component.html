@@ -1,0 +1,9 @@
+<ul id="task-list">
+    <li *ngFor="let work of works;let i=index" (dblclick)="onEditDoubleClicked(i)" class="task-element justify-content-between">
+        {{work.name}}
+        <span class="closeButton" (click)="close(i)">X</span>
+    </li>
+</ul>
+<input type="text" id="textToEdit"class="form-control w-50" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+<input id="isDone"class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+<button id="saveEdit"type="button" class="btn btn-primary btn-sm" (click)="saveEdit()">Guardar</button>
